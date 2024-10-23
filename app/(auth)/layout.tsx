@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <ClerkProvider>
-      <html lang="en">
+      <html lang="en" data-theme="dracula">
         <body className={roboto.className}>{children}</body>
       </html>
     </ClerkProvider>

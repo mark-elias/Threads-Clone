@@ -5,7 +5,7 @@ import React from "react";
 
 function NavBar() {
   return (
-    <nav className="bg-purple-400 flex justify-between px-10 text-white py-5 shadow-xl items-center">
+    <nav className=" flex justify-between px-10 py-5 shadow-xl items-center">
       <div>Cool Logo</div>
       <div className="flex gap-5 items-center">
         <Link href={"/"}>skills</Link>
