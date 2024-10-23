@@ -11,7 +11,7 @@ import { TbLogout2 } from "react-icons/tb";
 
 function LeftMenu() {
   return (
-    <section className="flex flex-col bg-neutral items-start max-lg:hidden h-screen gap-8 px-16 pt-10 text-xl">
+    <section className="flex flex-col items-start max-lg:hidden h-screen gap-8 px-16 pt-10 text-xl bg-neutral">
       <Link href={"/"} className="flex items-center gap-2 hover:text-primary">
         <GoHome className="text-[27px] -mt-1" />
         <p>Home</p>

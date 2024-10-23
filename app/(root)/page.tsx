@@ -6,7 +6,7 @@ function HomePage() {
   return (
     <div className="flex">
       <LeftMenu />
-      <div className="bg-accent h-full">
+      <div>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt quas eaque
         laboriosam minus doloremque eos illum debitis necessitatibus fuga
         quibusdam laudantium autem, molestias odio suscipit nihil quod iusto,

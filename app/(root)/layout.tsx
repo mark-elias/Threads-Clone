@@ -23,10 +23,10 @@ export default function RootLayout({
 }>) {
   return (
     <ClerkProvider>
-      <html lang="en" data-theme="dracula">
+      <html lang="en" data-theme="mycooltheme">
         <body className={`${roboto.className} h-screen flex flex-col`}>
           <NavBar />
-          <main className="flex-grow bg-pink-300">{children}</main>
+          <main className="flex-grow">{children}</main>
           <MobileMenu />
         </body>
       </html>

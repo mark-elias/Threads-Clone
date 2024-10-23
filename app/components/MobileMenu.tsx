@@ -9,7 +9,7 @@ import { MdOutlinePersonOutline } from "react-icons/md";
 
 function MobileMenu() {
   return (
-    <div className="flex bg-secondary justify-center gap-5 items-center lg:hidden">
+    <div className="flex justify-center gap-5 items-center lg:hidden bg-neutral">
       <Link href={"/"} className="text-[30px]">
         <GoHome></GoHome>
       </Link>

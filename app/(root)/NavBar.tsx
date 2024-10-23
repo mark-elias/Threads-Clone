@@ -5,9 +5,9 @@ import React from "react";
 
 function NavBar() {
   return (
-    <nav className=" flex justify-between px-10 py-5 shadow-xl items-center">
+    <nav className=" flex justify-between px-10 py-5 shadow-xl items-center bg-neutral">
       <Link href={"/"} className="flex items-center gap-2 hover:text-primary">
-        <FaSquareThreads className="text-3xl" />
+        <FaSquareThreads className="text-3xl text-primary" />
         <p className="text-xl">threads clone</p>
       </Link>
 
