@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import "../globals.css";
 
-import { Bebas_Neue } from "next/font/google";
+import { Roboto } from "next/font/google";
+import Link from "next/link";
 
-const bebas = Bebas_Neue({
+const roboto = Roboto({
   weight: "400", // You can omit this if you don't need a specific weight
   subsets: ["latin"], // Specify the character subsets
 });
@@ -20,7 +21,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={bebas.className}>{children}</body>
+      <body className={roboto.className}>
+        <nav className="bg-purple-400 flex justify-between px-10">
+          <div>Cool Logo</div>
+          <div className="flex gap-5">
+            <Link href={"/"}>skills</Link>
+            <Link href={"/"}>skills</Link>
+            <Link href={"/"}>skills</Link>
+          </div>
+        </nav>
+        {children}
+      </body>
     </html>
   );
 }

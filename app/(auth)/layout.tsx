@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "../globals.css";
-// import { ClerkProvider } from "@clerk/nextjs";
 import { Roboto } from "next/font/google";
+// import { ClerkProvider } from "@clerk/nextjs";
 
 export const metadata: Metadata = {
   title: "Threads Clone",
@@ -9,8 +9,8 @@ export const metadata: Metadata = {
 };
 
 const roboto = Roboto({
-  weight: "400", // You can omit this if you don't need a specific weight
-  subsets: ["latin"], // Specify the character subsets
+  weight: "400",
+  subsets: ["latin"],
 });
 
 export default function RootLayout({
