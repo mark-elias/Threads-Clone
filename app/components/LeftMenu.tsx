@@ -1,3 +1,4 @@
+import { SignOutButton } from "@clerk/nextjs";
 import Link from "next/link";
 import React from "react";
 import { FaRegHeart } from "react-icons/fa6";
@@ -6,6 +7,7 @@ import { GrGroup } from "react-icons/gr";
 import { IoIosAdd } from "react-icons/io";
 import { IoSearch } from "react-icons/io5";
 import { MdOutlinePersonOutline } from "react-icons/md";
+import { TbLogout2 } from "react-icons/tb";
 
 function LeftMenu() {
   return (
@@ -48,6 +50,13 @@ function LeftMenu() {
       >
         <MdOutlinePersonOutline className="text-[30px] -ml-[1px]" />
         <p>Profile</p>
+      </Link>
+      <Link
+        href={"/"}
+        className="flex items-center gap-2 -ml-1 hover:text-primary"
+      >
+        <TbLogout2 className="text-3xl" />
+        <SignOutButton />
       </Link>
     </section>
   );

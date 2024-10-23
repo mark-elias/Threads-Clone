@@ -6,13 +6,12 @@ import React from "react";
 function NavBar() {
   return (
     <nav className=" flex justify-between px-10 py-5 shadow-xl items-center">
-      <div>Cool Logo</div>
-      <div className="flex gap-5 items-center">
-        <Link href={"/"}>skills</Link>
-        <Link href={"/"}>skills</Link>
-        <Link href={"/"}>skills</Link>
-        <UserButton></UserButton>
-      </div>
+      <Link href={"/"} className="flex items-center gap-2 hover:text-primary">
+        <FaSquareThreads className="text-3xl" />
+        <p className="text-xl">threads clone</p>
+      </Link>
+
+      <UserButton></UserButton>
     </nav>
   );
 }
