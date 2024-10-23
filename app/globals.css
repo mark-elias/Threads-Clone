@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@layer base{
+  body{
+    @apply text-purple-500
+  }
+}
+
 @layer components {
   /* main */
   .main-container {

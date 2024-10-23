@@ -1,5 +1,12 @@
 import type { Metadata } from "next";
-import "./globals.css";
+import "../globals.css";
+
+import { Bebas_Neue } from "next/font/google";
+
+const bebas = Bebas_Neue({
+  weight: "400", // You can omit this if you don't need a specific weight
+  subsets: ["latin"], // Specify the character subsets
+});
 
 export const metadata: Metadata = {
   title: "Threads Clone",
@@ -13,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className={bebas.className}>{children}</body>
     </html>
   );
 }
