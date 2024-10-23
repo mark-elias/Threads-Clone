@@ -3,6 +3,7 @@ import "../globals.css";
 import { Roboto } from "next/font/google";
 import Link from "next/link";
 import { ClerkProvider, UserButton } from "@clerk/nextjs";
+import NavBar from "./NavBar";
 
 const roboto = Roboto({
   weight: "400", // You can omit this if you don't need a specific weight
@@ -23,15 +24,7 @@ export default function RootLayout({
     <ClerkProvider>
       <html lang="en">
         <body className={roboto.className}>
-          <nav className="bg-purple-400 flex justify-between px-10 text-white py-5 shadow-xl items-center">
-            <div>Cool Logo</div>
-            <div className="flex gap-5 items-center">
-              <Link href={"/"}>skills</Link>
-              <Link href={"/"}>skills</Link>
-              <Link href={"/"}>skills</Link>
-              <UserButton></UserButton>
-            </div>
-          </nav>
+          <NavBar />
           <main>{children}</main>
         </body>
       </html>
