@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import "../globals.css";
-
 import { Roboto } from "next/font/google";
 import Link from "next/link";
+import { ClerkProvider, UserButton } from "@clerk/nextjs";
 
 const roboto = Roboto({
   weight: "400", // You can omit this if you don't need a specific weight
@@ -20,18 +20,21 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={roboto.className}>
-        <nav className="bg-purple-400 flex justify-between px-10">
-          <div>Cool Logo</div>
-          <div className="flex gap-5">
-            <Link href={"/"}>skills</Link>
-            <Link href={"/"}>skills</Link>
-            <Link href={"/"}>skills</Link>
-          </div>
-        </nav>
-        {children}
-      </body>
-    </html>
+    <ClerkProvider>
+      <html lang="en">
+        <body className={roboto.className}>
+          <nav className="bg-purple-400 flex justify-between px-10 text-white py-5 shadow-xl items-center">
+            <div>Cool Logo</div>
+            <div className="flex gap-5 items-center">
+              <Link href={"/"}>skills</Link>
+              <Link href={"/"}>skills</Link>
+              <Link href={"/"}>skills</Link>
+              <UserButton></UserButton>
+            </div>
+          </nav>
+          <main>{children}</main>
+        </body>
+      </html>
+    </ClerkProvider>
   );
 }
