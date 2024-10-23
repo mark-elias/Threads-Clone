@@ -9,30 +9,24 @@ import { MdOutlinePersonOutline } from "react-icons/md";
 
 function MobileMenu() {
   return (
-    <div className="lg:hidden flex">
-      <Link href={"/"}>
+    <div className="flex bg-secondary justify-center gap-5 items-center lg:hidden">
+      <Link href={"/"} className="text-[30px]">
         <GoHome></GoHome>
-        Home
       </Link>
-      <Link href={"/search"}>
+      <Link href={"/search"} className="text-[27px]">
         <IoSearch></IoSearch>
-        Search
       </Link>
-      <Link href={"/activity"}>
+      <Link href={"/activity"} className="text-[27px]">
         <FaRegHeart />
-        Activity
       </Link>
-      <Link href={"/create"}>
+      <Link href={"/create"} className="text-[50px]">
         <IoIosAdd />
-        Create
       </Link>
-      <Link href={"/communities"}>
+      <Link href={"/communities"} className="text-[25px]">
         <GrGroup />
-        Communities
       </Link>
-      <Link href={"/profile"}>
+      <Link href={"/profile"} className="text-[30px]">
         <MdOutlinePersonOutline />
-        Profile
       </Link>
     </div>
   );

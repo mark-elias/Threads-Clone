@@ -4,6 +4,7 @@ import { Roboto } from "next/font/google";
 import Link from "next/link";
 import { ClerkProvider, UserButton } from "@clerk/nextjs";
 import NavBar from "./NavBar";
+import MobileMenu from "../components/MobileMenu";
 
 const roboto = Roboto({
   weight: "400", // You can omit this if you don't need a specific weight
@@ -23,9 +24,10 @@ export default function RootLayout({
   return (
     <ClerkProvider>
       <html lang="en" data-theme="dracula">
-        <body className={roboto.className}>
+        <body className={`${roboto.className} h-screen flex flex-col`}>
           <NavBar />
-          <main>{children}</main>
+          <main className="flex-grow bg-pink-300">{children}</main>
+          <MobileMenu />
         </body>
       </html>
     </ClerkProvider>
