@@ -1,10 +1,12 @@
 import React from "react";
+import MobileMenu from "../components/MobileMenu";
 
 function HomePage() {
   return (
-    <main>
+    <div className="bg-orange-100">
       <h1>HomePage for Threads Clone</h1>
-    </main>
+      <MobileMenu />
+    </div>
   );
 }
 
