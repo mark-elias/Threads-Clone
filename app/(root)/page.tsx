@@ -6,7 +6,7 @@ function HomePage() {
   return (
     <div className="flex">
       <LeftMenu />
-      <div>
+      <div className="p-10">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt quas eaque
         laboriosam minus doloremque eos illum debitis necessitatibus fuga
         quibusdam laudantium autem, molestias odio suscipit nihil quod iusto,
